@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#720d5d</color>
+    <color name="colorPrimaryDark">#430033</color>
+    <color name="colorAccent">#720d5d</color>
+    <color name="primaryText">#000000</color>
+    <color name="icon">#5d1049</color>
+    <color name="buttonNormal">#e30425</color>
+    <color name="buttonHighlight">#ff554f</color>
+    <color name="buttonText">#FFFFFF</color>
+
+    <!-- Mint Theme Colors -->
+    <color name="mintColorPrimary">#76be2f</color>
+    <color name="mintColorPrimaryDark">#289b23</color>
+    <color name="mintColorAccent">#f9a825</color>
+    <color name="mintPrimaryText">#424242</color>
+    <color name="mintIcon">#ff554f</color>
+    <color name="mintButtonNormal">#76be2f</color>
+    <color name="mintButtonHighlight">#81c784</color>
+    <color name="mintButtonText">#FFFFFF</color>
+
+    <!--chat background-->
+    <color name="centercolor">#B0EFE4B0</color>
+    <color name="endcolor">#9FEFE4B0</color>
+    <color name="startcolor">#B7EFE4B0</color>
+
+    <color name="rippelColor">#0099CC</color>
+
+    <color name="secondaryColor">#00796b</color>
+    <color name="secondaryDarkColor">#004c40</color>
+
+    <color name="primaryLight">#718792</color>
+    <color name="secondaryLight">#48a999</color>
+
+    <color name="edit_text_hint_color">#A6A6A6</color>
+    <color name="edit_text_line_color">#D9D9D9</color>
+
+    <color name="toolbar_title">#F8F8F8</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="color_professional">#4285F4</color>
+    <color name="color_owner">#FBBC05</color>
+    <color name="color_student">#FF9933</color>
+
+    <color name="linked_in">#077BB7</color>
+    <color name="facebook">#3B5998</color>
+
+    <color name="nav_inactive">#70757A</color>
+    <color name="nav_active">#455a64</color>
+
+    <color name="disableTxt">#B2B2B2</color>
+    <color name="disableBtn">#D2D1D1</color>
+
+    <color name="iconTint">#8e8e8e</color>
+    <color name="accentLight">#ff988db6</color>
+    <color name="textLightGray">#8f8f8f</color>
+    <color name="lightGray">#e6e6e6</color>
+    <color name="error">#da1b21</color>
+    <color name="default_colour_grey">#8e8e8e</color>
+
+    <color name="colorbackground">#D3720D5D</color>
+</resources>

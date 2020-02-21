@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">672865456394-7c4e3l4d84ubam2lo4d8lpuui0ubp5r5.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://kotlin-practice-51742.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">672865456394</string>
+    <string name="google_api_key" translatable="false">AIzaSyBnJOK4_wU4dgwfq3KDBGZR8IDDiG_QJqg</string>
+    <string name="google_app_id" translatable="false">1:672865456394:android:ebde9e1d67b550bc52aaf3</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBnJOK4_wU4dgwfq3KDBGZR8IDDiG_QJqg</string>
+    <string name="google_storage_bucket" translatable="false">kotlin-practice-51742.appspot.com</string>
+    <string name="project_id" translatable="false">kotlin-practice-51742</string>
+</resources>

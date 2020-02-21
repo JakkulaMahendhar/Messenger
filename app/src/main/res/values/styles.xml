@@ -1,0 +1,96 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="email">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:background">@drawable/border</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="password">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/tv_email</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:background">@drawable/border</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="login">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:background">@drawable/border</item>
+        <item name="android:drawableEnd">@drawable/ic_arrow_forward_black_24dp</item>
+        <item name="android:elevation">15dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="whiteBox">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="skip">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:background">@drawable/border</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <!--<item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>-->
+    </style>
+
+    <style name="TextAppearance.App.Widget.TextView" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">?attr/primaryTextColor</item>
+    </style>
+
+    <style name="EditTextTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/edit_text_line_color</item>
+        <item name="colorControlActivated">@color/edit_text_line_color</item>
+        <item name="colorControlHighlight">@color/edit_text_line_color</item>
+    </style>
+
+    <style name="AppTheme.NoActionStatusBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionBarStyle">@style/AppBarOverlay</item>
+        <item name="android:textColorSecondary">@color/nav_active</item>
+    </style>
+
+    <style name="AppBarOverlay" parent="Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="homeAsUpIndicator">@drawable/ic_chevron_left_white_24dp</item>
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+        <item name="titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/toolbar_title</item>
+    </style>
+
+   <!-- <item name="tabIndicator">@drawable/tab_indicator</item>-->
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GroupsOnlineViewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:orientation="vertical">
+
+        <com.example.kotlinpractice.RippleBackground
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:rb_color="@color/colorPrimary"
+            app:rb_duration="3000"
+            app:rb_radius="28dp"
+            app:rb_rippleAmount="6"
+            app:rb_scale="6"
+            app:rb_type="fillRipple">
+
+            <ImageView
+                android:id="@+id/centerImage"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerInParent="true"
+                android:elevation="6dp"
+                android:src="@drawable/user_male_100px" />
+
+            <ImageView
+                android:id="@+id/foundDevice"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_above="@id/centerImage"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="32dp"
+                android:layout_toLeftOf="@id/centerImage"
+                android:elevation="6dp"
+                android:src="@drawable/user_100px"
+                android:visibility="invisible" />
+
+
+        </com.example.kotlinpractice.RippleBackground>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.mlsdev.animatedrv.AnimatedRecyclerView
+                    android:id="@+id/recycler_view_group_online_contacts"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    app:animationDuration="600"
+                    app:layoutAnimation="@anim/layout_animation_from_bottom"
+                    app:layoutManagerOrientation="vertical"
+                    app:layoutManagerReverse="false"
+                    app:layoutManagerType="linear" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:elevation="6dp"
+                    android:fontFamily="@font/montserrat"
+                    android:padding="2dp"
+                    android:text="View All"
+                    android:textColor="@color/colorPrimary" />
+
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+</LinearLayout>

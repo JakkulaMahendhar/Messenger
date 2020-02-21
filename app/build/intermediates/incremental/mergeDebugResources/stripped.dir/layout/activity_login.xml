@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                                
+                                                              
+
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".LoginActivity" android:tag="layout/activity_login_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_login_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/forty_eight">
+
+                <com.example.kotlinpractice.DrawableEditText
+                    android:id="@+id/tv_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/thirty_two"
+                    android:layout_marginEnd="@dimen/thirty_two"
+                    android:drawablePadding="@dimen/sixteen"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/hint_sign_up_email"
+                    android:importantForAutofill="no"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/sixteen"
+                    android:tag="binding_1"                       
+                    android:textColor="@drawable/bg_et_disabled"
+                    android:textColorHint="@color/edit_text_hint_color"
+                    android:textCursorDrawable="@drawable/bg_edittext_cursor"
+                    android:textSize="16sp"
+                    android:theme="@style/EditTextTheme"
+                    tools:targetApi="o" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_login_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_login_1"
+                android:layout_marginTop="12dp"
+                android:visibility="visible">
+
+                <com.example.kotlinpractice.DrawableEditText
+                    android:id="@+id/tv_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/thirty_two"
+                    android:layout_marginEnd="@dimen/thirty_two"
+                    android:drawablePadding="@dimen/sixteen"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/hint_login_password"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/sixteen"
+                    android:tag="binding_2"                          
+                    android:textColorHint="@color/edit_text_hint_color"
+                    android:textCursorDrawable="@drawable/bg_edittext_cursor"
+                    android:textSize="16sp"
+                    android:theme="@style/EditTextTheme"
+                    tools:targetApi="o" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_login_2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/sixty_four"
+                android:layout_marginTop="@dimen/forty_eight"
+                android:layout_marginEnd="@dimen/sixty_four"
+                android:background="@drawable/bg_btn_sign_in"
+                android:fontFamily="@font/montserrat"
+                android:tag="binding_3"                         
+                android:text="@string/title_sign_up_main"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="visible" />
+            <!--            <androidx.appcompat.widget.AppCompatButton-->
+            <!--                android:id="@+id/btn_signup"-->
+            <!--                style="@style/login"-->
+            <!--                android:layout_below="@id/layout_login_2"-->
+            <!--                android:onClick="@{userviewmodel::onLoginClick}"-->
+            <!--                android:text="GO" />-->
+
+            <TextView
+                android:id="@+id/txtForgotPwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_login_2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/twelve"
+                android:layout_marginRight="@dimen/thirty_two"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/title_login_forgot_password"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/skip"
+                android:layout_below="@id/layout_login_2"
+                android:tag="binding_4"                               
+                android:text="Skip"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_signup"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:text="Or"
+                android:textSize="15dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/or"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:drawableStart="@drawable/ic_phone_android_black_24dp"
+                android:drawablePadding="8dp"
+                android:tag="binding_5"                                        
+                android:padding="15dp"
+                android:text="Login With Mobile Number" />
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+         

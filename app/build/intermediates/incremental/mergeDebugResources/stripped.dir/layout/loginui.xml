@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/toolbar" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/gradientscrim"
+                android:padding="16dp"
+                app:srcCompat="@drawable/ic_output_onlinepngtools" />
+
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/sign_up_icon"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:padding="15dp"
+            app:srcCompat="@drawable/ic_myntra" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/facebook_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:clickable="true"
+                android:drawableStart="@drawable/ic_icons8_facebook_old"
+                android:drawablePadding="10dp"
+                android:elevation="8dp"
+                android:focusable="true"
+                android:fontFamily="@font/montserrat"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                android:padding="13dp"
+                android:text="Facebook"
+                android:textAlignment="center"
+                android:textColor="#BC000000"
+                android:textStyle="bold" />
+
+            <Space
+                android:id="@+id/space"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/facebook_login" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/google_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/space"
+                android:clickable="true"
+                android:drawableStart="@drawable/ic_icons8_google"
+                android:drawablePadding="10dp"
+                android:elevation="8dp"
+                android:focusable="true"
+                android:fontFamily="@font/montserrat"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                android:text="Google"
+                android:textAlignment="center"
+                android:textColor="#BC000000"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/border"
+                android:clickable="true"
+                android:drawableStart="@drawable/ic_icons8_gmail"
+                android:elevation="8dp"
+                android:focusable="true"
+                android:fontFamily="@font/montserrat"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:onClick="emailLoginVerification"
+                android:padding="15dp"
+                android:text="Log in using Email"
+                android:textAlignment="center"
+                android:textColor="#BC000000"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/border"
+                android:clickable="true"
+                android:drawableStart="@drawable/ic_icons8_gmail"
+                android:elevation="8dp"
+                android:focusable="true"
+                android:fontFamily="@font/montserrat"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:onClick="mobileLoginVerification"
+                android:padding="15dp"
+                android:text="Log in using mobile number"
+                android:textAlignment="center"
+                android:textColor="#BC000000"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mobile"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:elevation="8dp"
+                android:focusable="true"
+                android:fontFamily="@font/montserrat"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="New to Myntra? Sign up"
+                android:textAlignment="center"
+                android:textColor="#9A000000" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/termscond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:elevation="8dp"
+                android:focusable="true"
+                android:fontFamily="@font/montserrat"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                android:onClick="tempMainActivity"
+                android:padding="15dp"
+                android:text="Terms &amp; Conditions "
+                android:textAlignment="center"
+                android:textColor="#9A000000" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

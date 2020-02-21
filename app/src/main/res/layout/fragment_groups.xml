@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/colorview"
+    android:background="@drawable/itembackground"
+    android:elevation="8dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/mainPane"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <FrameLayout
+            android:id="@+id/fragment_inflate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.mlsdev.animatedrv.AnimatedRecyclerView
+                android:id="@+id/recycler_view_chat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                app:animationDuration="600"
+                app:layoutAnimation="@anim/layout_animation_from_bottom"
+                app:layoutManagerOrientation="vertical"
+                app:layoutManagerReverse="false"
+                app:layoutManagerType="linear" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="Tap (+) Button to Create a New Group"
+                android:textAlignment="center"
+                android:textColor="#B0000000" />
+
+            <!--            <com.example.kotlinpractice.CustomCheckBox-->
+            <!--                android:layout_width="32dp"-->
+            <!--                android:layout_height="48dp"-->
+            <!--                android:layout_margin="16dp"-->
+            <!--                app:color_checked="@color/colorPrimary"-->
+            <!--                android:visibility="gone"-->
+            <!--                app:color_tick="@android:color/white"-->
+            <!--                app:color_unchecked_stroke="@color/colorAccent"-->
+            <!--                app:small_tick="true" />-->
+
+
+            <ImageView
+                android:id="@+id/tick_cross"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="end"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_tick" />
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/add_groups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="18dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:clickable="true"
+                android:elevation="6dp"
+                android:focusable="true"
+                android:src="@drawable/ic_add_black_24dp"
+                app:borderWidth="0dp" />
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\KotlinPractice\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "D:\\KotlinPractice\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\KotlinPractice\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
+        "source": "D:\\KotlinPractice\\app\\src\\main\\res\\layout\\activity_login.xml"
+    }
+]

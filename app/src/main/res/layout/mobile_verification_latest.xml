@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:fontFamily="@font/montserrat"
+            android:paddingStart="12dp"
+            android:text="@string/mobilevalidatetext"
+            android:textColor="@color/black"
+            android:textSize="@dimen/twenty_four" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_login_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twenty_four">
+
+            <com.example.kotlinpractice.DrawableEditText
+                android:id="@+id/tv_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/twenty_four"
+                android:layout_marginEnd="@dimen/twenty_four"
+                android:drawablePadding="@dimen/sixteen"
+                android:fontFamily="@font/montserrat"
+                android:hint="@string/mobilenumber"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/sixteen"
+                android:textColor="@drawable/bg_et_disabled"
+                android:textColorHint="@color/edit_text_hint_color"
+                android:textCursorDrawable="@drawable/bg_edittext_cursor"
+                android:textSize="16sp"
+                android:theme="@style/EditTextTheme"
+                tools:targetApi="o" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btn_get_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_login_2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/sixty_four"
+            android:layout_marginTop="@dimen/twenty_four"
+            android:layout_marginEnd="@dimen/sixty_four"
+            android:background="@drawable/bg_btn_sign_in"
+            android:fontFamily="@font/montserrat"
+            android:onClick="@{userviewmodel::onLoginClick}"
+            android:text="@string/getotp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>

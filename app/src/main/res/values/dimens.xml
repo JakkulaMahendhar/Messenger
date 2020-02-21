@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="rippleStrokeWidth">2dp</dimen>
+    <dimen name="rippleRadius">64dp</dimen>
+
+    <dimen name="img_width">96dp</dimen>
+    <dimen name="img_length">96dp</dimen>
+
+    <dimen name="graph_height">280dp</dimen>
+
+    <dimen name="point_five">0.5dp</dimen>
+    <dimen name="one">1dp</dimen>
+    <dimen name="two">2dp</dimen>
+    <dimen name="four">4dp</dimen>
+    <dimen name="eight">8dp</dimen>
+    <dimen name="twelve">12dp</dimen>
+    <dimen name="sixteen">16dp</dimen>
+
+    <dimen name="twenty_four">24dp</dimen>
+    <dimen name="twenty_eight">28dp</dimen>
+
+    <dimen name="thirty_two">32dp</dimen>
+    <dimen name="thirty_six">36dp</dimen>
+
+    <dimen name="forty_eight">48dp</dimen>
+    <dimen name="sixty_four">64dp</dimen>
+    <dimen name="seventy_two">72dp</dimen>
+    <dimen name="ninety_six">96dp</dimen>
+
+    <dimen name="one_hundred_eight">108dp</dimen>
+    <dimen name="one_twenty_eight">128dp</dimen>
+
+    <dimen name="title_padding_right">16dp</dimen>
+    <dimen name="title_padding_left">58dp</dimen>
+    <dimen name="list_padding">0dp</dimen>
+    <dimen name="tabs_padding">8dp</dimen>
+    <dimen name="card_view_margin">5dp</dimen>
+    <dimen name="view_header_padding_bottom">0dp</dimen>
+    <dimen name="create_scroll_view_padding">0dp</dimen>
+    <dimen name="toolbar_elevation">4dp</dimen>
+    <dimen name="toolbar_shadow_height">10dp</dimen>
+    <dimen name="toolbar_shadow_adjust">-10dp</dimen>
+    <dimen name="table_row_default_horizontal_padding">20dp</dimen>
+    <dimen name="table_row_default_padding_side">16dp</dimen>
+    <dimen name="line_separator_height">0.5dp</dimen>
+    <dimen name="line_separator_margin_side_large">64dp</dimen>
+    <dimen name="line_separator_margin_side">8dp</dimen>
+    <dimen name="image_margin_side">16dp</dimen>
+    <dimen name="view_image_margin_side">26dp</dimen>
+    <dimen name="text_margin_side">22dp</dimen>
+    <dimen name="fab_recycler_view_padding">88dp</dimen>
+    <dimen name="table_row_about_padding">18dp</dimen>
+    <dimen name="text_about_margin_side">22dp</dimen>
+    <dimen name="text_view_margin_side">20dp</dimen>
+    <dimen name="table_row_view_padding">15dp</dimen>
+    <dimen name="text_dialog_padding_side">16dp</dimen>
+    <dimen name="dialog_padding_side">24dp</dimen>
+    <dimen name="toolbar_placeholder_height">56dp</dimen>
+    <dimen name="item_offset">5dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="img_width_height">120dp</dimen>
+    <dimen name="slide_title">30dp</dimen>
+    <dimen name="slide_desc">16dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+</resources>
