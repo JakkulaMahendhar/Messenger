@@ -47,7 +47,6 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_toRightOf="@id/img_wallet"
-                        android:fontFamily="@font/montserrat"
                         android:text="My Wallet"
                         android:textSize="21sp" />
 
@@ -64,7 +63,6 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/mywallet"
                         android:layout_marginLeft="10dp"
-                        android:fontFamily="@font/montserrat"
                         android:paddingTop="20dp"
                         android:paddingBottom="10dp"
                         android:text="User Details"
@@ -78,7 +76,6 @@
                         android:layout_alignParentEnd="true"
                         android:layout_marginStart="10dp"
                         android:layout_marginRight="15dp"
-                        android:fontFamily="@font/montserrat"
                         android:onClick="@{()->mainviewmodel.editClick()}"
                         android:paddingTop="20dp"
                         android:paddingBottom="10dp"
@@ -89,7 +86,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/user_tag"
-                        android:fontFamily="@font/montserrat"
                         android:padding="10dp"
                         android:textSize="21sp"
                         android:visibility="invisible" />
@@ -99,7 +95,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/user_tag"
-                        android:fontFamily="@font/montserrat"
                         android:padding="10dp"
                         android:text="email"
                         android:textSize="21sp" />
@@ -109,7 +104,7 @@
                 <!--  <include layout="@layout/card" />-->
 
 
-                <Button
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btn_signout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

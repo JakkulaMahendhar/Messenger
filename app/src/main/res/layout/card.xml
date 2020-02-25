@@ -41,7 +41,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="30dp"
-            android:fontFamily="@font/montserrat"
             android:text="Mr. Jakkula Mahendhar"
             android:textColor="#fffaf0"
             android:textSize="21sp"
@@ -62,7 +61,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
-            android:fontFamily="@font/montserrat"
             android:text="Balance Available"
             android:textSize="21sp" />
 
@@ -72,7 +70,6 @@
             android:layout_alignParentRight="true"
             android:layout_marginTop="10dp"
             android:layout_marginRight="8dp"
-            android:fontFamily="@font/montserrat"
             android:text="Add Money"
             android:textColor="#4CAF50"
             android:textSize="18sp" />

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#720d5d</color>
-    <color name="colorPrimaryDark">#430033</color>
-    <color name="colorAccent">#720d5d</color>
+    <color name="colorPrimary">#4a90e2</color>
+    <color name="colorPrimaryDark">#D83B7DCE</color>
+    <color name="colorAccent">#4ab8e2</color>
     <color name="primaryText">#000000</color>
     <color name="icon">#5d1049</color>
     <color name="buttonNormal">#e30425</color>
@@ -61,4 +61,12 @@
     <color name="default_colour_grey">#8e8e8e</color>
 
     <color name="colorbackground">#D3720D5D</color>
+
+    <color name="colorhuntfirst">#e14594</color>
+    <color name="colorhuntsecond">#7045af</color>
+    <color name="colorhuntthird">#2b3595</color>
+    <color name="colorhuntfourth">#182952</color>
+
+
+    <color name="primaryTextColor">#2661FA</color>
 </resources>

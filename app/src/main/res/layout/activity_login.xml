@@ -15,12 +15,12 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
-        tools:context=".LoginActivity">
+        android:background="@drawable/login_bk">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +39,6 @@
                     android:layout_marginStart="@dimen/thirty_two"
                     android:layout_marginEnd="@dimen/thirty_two"
                     android:drawablePadding="@dimen/sixteen"
-                    android:fontFamily="@font/montserrat"
                     android:hint="@string/hint_sign_up_email"
                     android:importantForAutofill="no"
                     android:inputType="textEmailAddress"
@@ -68,7 +67,6 @@
                     android:layout_marginStart="@dimen/thirty_two"
                     android:layout_marginEnd="@dimen/thirty_two"
                     android:drawablePadding="@dimen/sixteen"
-                    android:fontFamily="@font/montserrat"
                     android:hint="@string/hint_login_password"
                     android:importantForAutofill="no"
                     android:inputType="textPassword"
@@ -82,7 +80,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_signup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -92,7 +90,9 @@
                 android:layout_marginTop="@dimen/forty_eight"
                 android:layout_marginEnd="@dimen/sixty_four"
                 android:background="@drawable/bg_btn_sign_in"
-                android:fontFamily="@font/montserrat"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
                 android:onClick="@{userviewmodel::onLoginClick}"
                 android:text="@string/title_sign_up_main"
                 android:textColor="@color/white"
@@ -113,7 +113,6 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="@dimen/twelve"
                 android:layout_marginRight="@dimen/thirty_two"
-                android:fontFamily="@font/montserrat"
                 android:text="@string/title_login_forgot_password"
                 android:textSize="14sp"
                 android:visibility="visible" />
@@ -133,7 +132,8 @@
                 android:layout_centerHorizontal="true"
                 android:layout_margin="15dp"
                 android:text="Or"
-                android:textSize="15dp" />
+                android:textSize="15dp"
+                android:visibility="invisible" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
@@ -145,7 +145,8 @@
                 android:drawablePadding="8dp"
                 android:onClick="@{() -> userviewmodel.onMobileVerification()}"
                 android:padding="15dp"
-                android:text="Login With Mobile Number" />
+                android:text="Login With Mobile Number"
+                android:visibility="invisible" />
 
         </RelativeLayout>
 

@@ -8,6 +8,7 @@ import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
 import com.example.kotlinpractice.databinding.ActivityLoginBindingImpl;
 import com.example.kotlinpractice.databinding.ActivityMainBindingImpl;
+import com.example.kotlinpractice.databinding.DialogOtpBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
 import java.lang.Object;
@@ -23,11 +24,14 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_ACTIVITYMAIN = 2;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(2);
+  private static final int LAYOUT_DIALOGOTP = 3;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(3);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.kotlinpractice.R.layout.activity_login, LAYOUT_ACTIVITYLOGIN);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.kotlinpractice.R.layout.activity_main, LAYOUT_ACTIVITYMAIN);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.kotlinpractice.R.layout.dialog_otp, LAYOUT_DIALOGOTP);
   }
 
   @Override
@@ -50,6 +54,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new ActivityMainBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for activity_main is invalid. Received: " + tag);
+        }
+        case  LAYOUT_DIALOGOTP: {
+          if ("layout/dialog_otp_0".equals(tag)) {
+            return new DialogOtpBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for dialog_otp is invalid. Received: " + tag);
         }
       }
     }
@@ -106,11 +116,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(2);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(3);
 
     static {
       sKeys.put("layout/activity_login_0", com.example.kotlinpractice.R.layout.activity_login);
       sKeys.put("layout/activity_main_0", com.example.kotlinpractice.R.layout.activity_main);
+      sKeys.put("layout/dialog_otp_0", com.example.kotlinpractice.R.layout.dialog_otp);
     }
   }
 }

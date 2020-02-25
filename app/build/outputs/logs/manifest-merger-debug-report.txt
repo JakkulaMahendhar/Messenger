@@ -19,6 +19,7 @@ MERGED from [com.mlsdev.animatedrv:library:2.0.0] C:\Users\Administrator\.gradle
 MERGED from [androidx.palette:palette:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\23d30eec32599ee2fa9edcdfa9faf041\palette-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fa88e0941f6ba5048fcef6f5990626f8\lifecycle-extensions-2.0.0\AndroidManifest.xml:17:1-25:12
 MERGED from [androidx.room:room-runtime:2.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\328cb05431aaf869477b17f4a290b1bb\room-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.alimuzaffar.lib:pinentryedittext:2.0.6] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a9d7671abe3a0dcc61c50d4a2b5cab70\pinentryedittext-2.0.6\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\977ab914f11c1712d618c20f64ad11fa\firebase-datatransport-17.0.3\AndroidManifest.xml:15:1-34:12
 MERGED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\59a7f4ddcc3bf940ed70e9477030ddf8\firebase-iid-20.0.2\AndroidManifest.xml:17:1-47:12
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\e43ea7e9a6423d2e3dafa16986ee7a85\firebase-auth-interop-19.0.0\AndroidManifest.xml:2:1-10:12
@@ -187,15 +188,15 @@ ADDED from D:\KotlinPractice\app\src\main\AndroidManifest.xml:23:9-31:20
 	android:name
 		ADDED from D:\KotlinPractice\app\src\main\AndroidManifest.xml:24:13-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\KotlinPractice\app\src\main\AndroidManifest.xml:26:13-30:29
+ADDED from D:\KotlinPractice\app\src\main\AndroidManifest.xml:26:25-30:41
 action#android.intent.action.MAIN
-ADDED from D:\KotlinPractice\app\src\main\AndroidManifest.xml:27:17-69
+ADDED from D:\KotlinPractice\app\src\main\AndroidManifest.xml:27:29-81
 	android:name
-		ADDED from D:\KotlinPractice\app\src\main\AndroidManifest.xml:27:25-66
+		ADDED from D:\KotlinPractice\app\src\main\AndroidManifest.xml:27:37-78
 category#android.intent.category.LAUNCHER
-ADDED from D:\KotlinPractice\app\src\main\AndroidManifest.xml:29:17-77
+ADDED from D:\KotlinPractice\app\src\main\AndroidManifest.xml:29:29-89
 	android:name
-		ADDED from D:\KotlinPractice\app\src\main\AndroidManifest.xml:29:27-74
+		ADDED from D:\KotlinPractice\app\src\main\AndroidManifest.xml:29:39-86
 activity#com.example.kotlinpractice.MobileVerificationActivity
 ADDED from D:\KotlinPractice\app\src\main\AndroidManifest.xml:32:9-34:59
 	android:theme
@@ -211,7 +212,7 @@ ADDED from D:\KotlinPractice\app\src\main\AndroidManifest.xml:36:9-54
 	android:name
 		ADDED from D:\KotlinPractice\app\src\main\AndroidManifest.xml:36:19-51
 activity#com.example.kotlinpractice.LoginActivity
-ADDED from D:\KotlinPractice\app\src\main\AndroidManifest.xml:37:9-41:63
+ADDED from D:\KotlinPractice\app\src\main\AndroidManifest.xml:37:9-41:62
 	android:screenOrientation
 		ADDED from D:\KotlinPractice\app\src\main\AndroidManifest.xml:39:13-49
 	android:windowSoftInputMode
@@ -266,6 +267,8 @@ MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\Administrat
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\fa88e0941f6ba5048fcef6f5990626f8\lifecycle-extensions-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.room:room-runtime:2.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\328cb05431aaf869477b17f4a290b1bb\room-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.room:room-runtime:2.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\328cb05431aaf869477b17f4a290b1bb\room-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.alimuzaffar.lib:pinentryedittext:2.0.6] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a9d7671abe3a0dcc61c50d4a2b5cab70\pinentryedittext-2.0.6\AndroidManifest.xml:7:5-9:41
+MERGED from [com.alimuzaffar.lib:pinentryedittext:2.0.6] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\a9d7671abe3a0dcc61c50d4a2b5cab70\pinentryedittext-2.0.6\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\977ab914f11c1712d618c20f64ad11fa\firebase-datatransport-17.0.3\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\977ab914f11c1712d618c20f64ad11fa\firebase-datatransport-17.0.3\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\59a7f4ddcc3bf940ed70e9477030ddf8\firebase-iid-20.0.2\AndroidManifest.xml:20:5-44

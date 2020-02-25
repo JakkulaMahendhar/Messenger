@@ -20,7 +20,7 @@ class SplashScreenActivity : AppCompatActivity() {
         setContentView(R.layout.login_latest)
     }
 
-//    fun emailLoginVerification(view: View) {
+    //    fun emailLoginVerification(view: View) {
 //
 //        val intent = Intent(this, LoginActivity::class.java)
 //        startActivity(intent)
@@ -30,9 +30,10 @@ class SplashScreenActivity : AppCompatActivity() {
         val intent = Intent(this, MobileVerificationActivity::class.java)
         startActivity(intent)
     }
-//
-    fun tempMainActivity(view: View) {
-        val intent = Intent(this, HomeActivity::class.java)
+
+
+    fun facebookLoginVerification(view: View) {
+        val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
     }
 

@@ -484,6 +484,16 @@ attr passwordToggleDrawable
 attr passwordToggleEnabled
 attr passwordToggleTint
 attr passwordToggleTintMode
+attr pinAnimationType
+attr pinBackgroundDrawable
+attr pinBackgroundIsSquare
+attr pinCharacterMask
+attr pinCharacterSpacing
+attr pinLineColors
+attr pinLineStroke
+attr pinLineStrokeSelected
+attr pinRepeatedHint
+attr pinTextBottomPadding
 attr popupMenuStyle
 attr popupTheme
 attr popupWindowStyle
@@ -716,6 +726,10 @@ color color_owner
 color color_professional
 color color_student
 color colorbackground
+color colorhuntfirst
+color colorhuntfourth
+color colorhuntsecond
+color colorhuntthird
 color common_google_signin_btn_text_dark
 color common_google_signin_btn_text_dark_default
 color common_google_signin_btn_text_dark_disabled
@@ -813,8 +827,10 @@ color nav_inactive
 color notification_action_color_filter
 color notification_icon_bg_color
 color notification_material_background_media_default_color
+color pin_normal
 color primaryLight
 color primaryText
+color primaryTextColor
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -996,6 +1012,7 @@ dimen fastscroll_minimum_range
 dimen forty_eight
 dimen four
 dimen graph_height
+dimen headerTextSize
 dimen highlight_alpha_material_colored
 dimen highlight_alpha_material_dark
 dimen highlight_alpha_material_light
@@ -1309,6 +1326,7 @@ drawable icon_pwd
 drawable icon_view
 drawable itembackground
 drawable left
+drawable login_bk
 drawable logo
 drawable messages_fill
 drawable messages_icon
@@ -1431,10 +1449,11 @@ id btn_signin
 id btn_signout
 id btn_signup
 id button
+id buttonConfirm
 id buttonPanel
 id cancel_action
+id cardLayout
 id cardView
-id card_view
 id center
 id centerImage
 id center_horizontal
@@ -1468,6 +1487,7 @@ id dimensions
 id direct
 id disableHome
 id editTextCode
+id editTextOTP
 id edit_img
 id edit_query
 id email
@@ -1494,6 +1514,7 @@ id fixed
 id forever
 id foundDevice
 id fragment_inflate
+id fromBottom
 id ghost_view
 id gone
 id google_login
@@ -1564,6 +1585,9 @@ id parentPanel
 id parent_matrix
 id percent
 id pin
+id popIn
+id progressBarConfirm
+id progressBarTimer
 id progress_circular
 id progress_horizontal
 id progressbar
@@ -1642,9 +1666,13 @@ id tag_unhandled_key_listeners
 id termscond
 id text
 id text2
+id textDesc
+id textHead
+id textResendCode
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textTimer
 id textWatcher
 id text_input_password_toggle
 id textinput_counter
@@ -1787,6 +1815,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout dialog_otp
 layout fragment_card
 layout fragment_contacts
 layout fragment_groups
@@ -2423,6 +2452,7 @@ style Widget_Support_CoordinatorLayout
 style email
 style login
 style password
+style selectedItemClick
 style skip
 style whiteBox
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
@@ -2486,6 +2516,7 @@ styleable MenuGroup android_enabled android_id android_visible android_menuCateg
 styleable MenuItem android_icon android_enabled android_id android_checked android_visible android_menuCategory android_orderInCategory android_title android_titleCondensed android_alphabeticShortcut android_numericShortcut android_checkable android_onClick actionLayout actionProviderClass actionViewClass alphabeticModifiers contentDescription iconTint iconTintMode numericModifiers showAsAction tooltipText
 styleable MenuView android_windowAnimationStyle android_itemTextAppearance android_horizontalDivider android_verticalDivider android_headerBackground android_itemBackground android_itemIconDisabledAlpha preserveIconSpacing subMenuArrow
 styleable NavigationView android_background android_fitsSystemWindows android_maxWidth elevation headerLayout itemBackground itemHorizontalPadding itemIconPadding itemIconTint itemTextAppearance itemTextColor menu
+styleable PinEntryEditText pinAnimationType pinBackgroundDrawable pinBackgroundIsSquare pinCharacterMask pinCharacterSpacing pinLineColors pinLineStroke pinLineStrokeSelected pinRepeatedHint pinTextBottomPadding
 styleable PopupWindow android_popupBackground android_popupAnimationStyle overlapAnchor
 styleable PopupWindowBackgroundState state_above_anchor
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle

@@ -4,12 +4,12 @@ package com.example.kotlinpractice.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
@@ -20,7 +20,7 @@ import java.lang.Object;
 
 public abstract class ActivityMainBinding extends ViewDataBinding {
   @NonNull
-  public final Button btnSignout;
+  public final AppCompatButton btnSignout;
 
   @NonNull
   public final ImageView editImg;
@@ -44,8 +44,8 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   protected MainActivityViewModel mMainviewmodel;
 
   protected ActivityMainBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      Button btnSignout, ImageView editImg, TextView email, EditText etEmail, ImageView imgWallet,
-      TextView mywallet, TextView userTag) {
+      AppCompatButton btnSignout, ImageView editImg, TextView email, EditText etEmail,
+      ImageView imgWallet, TextView mywallet, TextView userTag) {
     super(_bindingComponent, _root, _localFieldCount);
     this.btnSignout = btnSignout;
     this.editImg = editImg;

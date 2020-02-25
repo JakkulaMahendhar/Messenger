@@ -37,10 +37,10 @@
                 android:layout_marginStart="@dimen/twenty_four"
                 android:layout_marginEnd="@dimen/twenty_four"
                 android:drawablePadding="@dimen/sixteen"
-                android:fontFamily="@font/montserrat"
                 android:hint="@string/mobilenumber"
                 android:importantForAutofill="no"
-                android:inputType="textEmailAddress"
+                android:inputType="number"
+                android:maxLength="10"
                 android:padding="@dimen/sixteen"
                 android:textColor="@drawable/bg_et_disabled"
                 android:textColorHint="@color/edit_text_hint_color"
@@ -51,8 +51,9 @@
         </com.google.android.material.textfield.TextInputLayout>
 
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_get_otp"
+            style="@style/selectedItemClick"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/layout_login_2"
@@ -61,8 +62,7 @@
             android:layout_marginTop="@dimen/twenty_four"
             android:layout_marginEnd="@dimen/sixty_four"
             android:background="@drawable/bg_btn_sign_in"
-            android:fontFamily="@font/montserrat"
-            android:onClick="@{userviewmodel::onLoginClick}"
+            android:onClick="otpDialog"
             android:text="@string/getotp"
             android:textColor="@color/white"
             android:textSize="16sp"

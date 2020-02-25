@@ -69,5 +69,12 @@ dependencies {
     implementation "android.arch.persistence.room:runtime:1.1.1"
     kapt "android.arch.persistence.room:compiler:1.1.1"
 
+    //otp
+    implementation('com.alimuzaffar.lib:pinentryedittext:2.0.6') {
+        // Exclude is only needed if you already have
+        // androidx.appcompat as a dependency in your app.
+        exclude group: 'androidx.appcompat', module: 'appcompat'
+    }
+
 
 }

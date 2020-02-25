@@ -115,7 +115,7 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding implements co
     }
     private ActivityLoginBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.Button) bindings[3]
+            , (androidx.appcompat.widget.AppCompatButton) bindings[3]
             , (com.google.android.material.textfield.TextInputLayout) bindings[6]
             , (com.google.android.material.textfield.TextInputLayout) bindings[7]
             , (androidx.appcompat.widget.AppCompatTextView) bindings[9]

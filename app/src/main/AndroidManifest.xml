@@ -23,11 +23,11 @@
         <activity
             android:name=".SplashScreenActivity"
             android:theme="@style/AppTheme.NoActionStatusBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                        <intent-filter>
+                            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+                            <category android:name="android.intent.category.LAUNCHER" />
+                        </intent-filter>
         </activity>
         <activity
             android:name=".MobileVerificationActivity"
@@ -38,7 +38,7 @@
             android:name=".LoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionStatusBar"
-            android:windowSoftInputMode="stateAlwaysHidden" />
+            android:windowSoftInputMode="stateAlwaysHidden"/>
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />

@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/montserrat</item>
     </style>
 
     <style name="email">
@@ -90,6 +91,12 @@
 
     <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance">
         <item name="android:textColor">@color/toolbar_title</item>
+    </style>
+
+    <style name="selectedItemClick">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackgroundBorderless</item>
     </style>
 
    <!-- <item name="tabIndicator">@drawable/tab_indicator</item>-->

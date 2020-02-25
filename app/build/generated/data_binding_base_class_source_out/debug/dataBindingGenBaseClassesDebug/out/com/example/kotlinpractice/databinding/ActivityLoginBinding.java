@@ -4,10 +4,10 @@ package com.example.kotlinpractice.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
@@ -21,7 +21,7 @@ import java.lang.Object;
 
 public abstract class ActivityLoginBinding extends ViewDataBinding {
   @NonNull
-  public final Button btnSignup;
+  public final AppCompatButton btnSignup;
 
   @NonNull
   public final TextInputLayout layoutLogin1;
@@ -45,7 +45,7 @@ public abstract class ActivityLoginBinding extends ViewDataBinding {
   protected UserViewModel mUserviewmodel;
 
   protected ActivityLoginBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      Button btnSignup, TextInputLayout layoutLogin1, TextInputLayout layoutLogin2,
+      AppCompatButton btnSignup, TextInputLayout layoutLogin1, TextInputLayout layoutLogin2,
       AppCompatTextView or, DrawableEditText tvEmail, DrawableEditText tvPassword,
       TextView txtForgotPwd) {
     super(_bindingComponent, _root, _localFieldCount);

@@ -1,5 +1,9 @@
 [
     {
+        "merged": "D:\\KotlinPractice\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_otp.xml",
+        "source": "D:\\KotlinPractice\\app\\src\\main\\res\\layout\\dialog_otp.xml"
+    },
+    {
         "merged": "D:\\KotlinPractice\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
         "source": "D:\\KotlinPractice\\app\\src\\main\\res\\layout\\activity_main.xml"
     },

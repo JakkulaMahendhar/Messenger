@@ -1,5 +1,7 @@
 package com.example.kotlinpractice
 
+import android.app.Dialog
+import android.app.ProgressDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -14,19 +16,27 @@ import java.util.concurrent.TimeUnit
 import com.google.firebase.FirebaseException
 
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.graphics.drawable.Drawable
+import android.os.CountDownTimer
 import android.text.Editable
 import android.text.TextWatcher
+import android.view.Window
 import android.widget.ProgressBar
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.*
 import kotlinx.android.synthetic.main.activity_login.*
+import kotlinx.android.synthetic.main.dialog_otp.*
 import kotlinx.android.synthetic.main.mobile_verification_latest.*
 
 
 class MobileVerificationActivity : AppCompatActivity(), View.OnClickListener {
 
+    private lateinit var dialog: Dialog
+    private lateinit var progressDialog: ProgressDialog
 
     lateinit var frameLayout: RelativeLayout
     var mVerificationId: String? = null
@@ -98,6 +108,7 @@ class MobileVerificationActivity : AppCompatActivity(), View.OnClickListener {
 
             btn_get_otp.setOnClickListener(this)
 
+
         } catch (e: Exception) {
             e.message
         }
@@ -105,6 +116,67 @@ class MobileVerificationActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun removeAllThings() {
         tv_mobile.setText(null)
+    }
+
+    private fun showOTPDialog() {
+        dialog = Dialog(this)
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+        dialog.setContentView(R.layout.dialog_otp)
+        dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        dialog.setCancelable(false)
+        dialog.show()
+
+        startTimer(30)
+
+        dialog.buttonConfirm.setOnClickListener {
+            if (!dialog.editTextOTP.text.toString().isEmpty()) {
+                //Tools.visibleViews(dialog.progressBarConfirm)
+                //Tools.disableViews(dialog.buttonConfirm, dialog.editTextOTP)
+                val otp = dialog.editTextOTP.text.toString()
+                //confirm check
+                if (otp.equals("123456")) {
+                    dialog.dismiss()
+                    goToHomeScreen()
+                } else {
+                    // The verification code entered was invalid
+                    dialog.editTextOTP.error = "Invalid Code"
+                    //Tools.inVisibleViews(dialog.progressBarConfirm, type = 1)
+                    //Tools.enableViews(dialog.buttonConfirm, dialog.editTextOTP)
+                }
+
+            } else {
+                dialog.editTextOTP.error = "Length must be 6"
+            }
+
+        }
+        dialog.textResendCode.setOnClickListener {
+            // mToast.showToast(this, "Resending", Toast.LENGTH_SHORT)
+            //resendVerificationCode(editTextMobNumber.text.toString())
+        }
+    }
+
+    private fun startTimer(second: Long) {
+        object : CountDownTimer(second * 1000, 1000) {
+
+            override fun onTick(millisUntilFinished: Long) {
+                //Tools.visibleViews(dialog.textTimer, dialog.progressBarTimer)
+                //Tools.disableViews(dialog.textResendCode)
+                dialog.textTimer.text = (millisUntilFinished / 1000).toString()
+            }
+
+
+            override fun onFinish() {
+                dialog.textResendCode.setTextColor(resources.getColor(R.color.colorPrimaryDark))
+//                Tools.inVisibleViews(dialog.textTimer, dialog.progressBarTimer, type = 0)
+//                Tools.enableViews(dialog.textResendCode)
+            }
+
+        }.start()
+    }
+
+    private fun goToHomeScreen() {
+        val intent = Intent(MobileVerificationActivity@ this, HomeActivity::class.java)
+        startActivity(intent)
     }
 
     private fun init() {
@@ -129,11 +201,17 @@ class MobileVerificationActivity : AppCompatActivity(), View.OnClickListener {
 
             R.id.btn_get_otp -> {
 
-                //editTextCode.visibility = View.VISIBLE
-                sendVerificationCode(tv_mobile.text.toString())
-                //btn_continue.visibility = View.GONE
-                //dotProgressBar?.startAnimation()
-                progressbar?.visibility = View.VISIBLE
+                if (tv_mobile.text.toString().trim().length == 10) {
+                    showOTPDialog()
+                    //editTextCode.visibility = View.VISIBLE
+                    sendVerificationCode(tv_mobile.text.toString())
+                    //btn_continue.visibility = View.GONE
+                    //dotProgressBar?.startAnimation()
+                    progressbar?.visibility = View.VISIBLE
+                } else {
+                    tv_mobile.error = "Mobile Number must be 10 digits"
+                }
+
             }
             R.id.btn_signin -> {
                 val code = editTextCode.text.toString().trim()

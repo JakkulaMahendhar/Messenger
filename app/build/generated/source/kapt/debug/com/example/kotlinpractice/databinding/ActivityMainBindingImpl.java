@@ -39,7 +39,7 @@ public class ActivityMainBindingImpl extends ActivityMainBinding implements com.
     }
     private ActivityMainBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (android.widget.Button) bindings[3]
+            , (androidx.appcompat.widget.AppCompatButton) bindings[3]
             , (android.widget.ImageView) bindings[2]
             , (android.widget.TextView) bindings[8]
             , (android.widget.EditText) bindings[7]
