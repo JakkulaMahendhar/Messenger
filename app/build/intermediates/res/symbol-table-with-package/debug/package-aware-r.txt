@@ -1429,14 +1429,13 @@ id adjust_height
 id adjust_width
 id alertTitle
 id all
+id allContacts
 id always
 id async
 id auto
-id avail_tv
 id back
 id barrier
 id beginning
-id bils_tv
 id blocking
 id bottom
 id bottom_icon
@@ -1466,6 +1465,8 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id colorview
+id contactNumber
+id contactname
 id container
 id content
 id contentPanel
@@ -1542,9 +1543,7 @@ id layout_login_1
 id layout_login_2
 id left
 id light
-id line
 id line1
-id line2
 id line3
 id linear
 id listMode
@@ -1557,8 +1556,6 @@ id message
 id middle
 id mini
 id mintTheme
-id mnth1_tv
-id mnth_tv
 id mobile
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
@@ -1605,7 +1602,6 @@ id right_icon
 id right_side
 id rl_bar
 id rl_rootview
-id rl_view
 id rootlayout
 id save_image_matrix
 id save_non_transition_alpha
@@ -1691,8 +1687,6 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
-id tv_amnt
-id tv_amnt1
 id tv_email
 id tv_input_text
 id tv_mobile
@@ -1712,7 +1706,6 @@ id user_img_type
 id user_message
 id user_name
 id user_tag
-id username
 id vertical
 id view
 id view1
@@ -1820,6 +1813,7 @@ layout fragment_card
 layout fragment_contacts
 layout fragment_groups
 layout fragment_home
+layout item_contacts_view
 layout login_latest
 layout loginui
 layout messages_list
@@ -2137,6 +2131,7 @@ style Base_Widget_MaterialComponents_TextInputLayout
 style CardView
 style CardView_Dark
 style CardView_Light
+style Dexter_Internal_Theme_Transparent
 style EditTextTheme
 style MyTheme_ActionBar_TitleTextStyle
 style Platform_AppCompat

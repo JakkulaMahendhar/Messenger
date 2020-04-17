@@ -76,5 +76,7 @@ dependencies {
         exclude group: 'androidx.appcompat', module: 'appcompat'
     }
 
+    implementation 'com.karumi:dexter:4.2.0'
+
 
 }

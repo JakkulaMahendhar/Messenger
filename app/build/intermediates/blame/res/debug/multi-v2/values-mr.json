@@ -38,24 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\4e783500555f0fb9da3768c84bb9408e\\jetified-play-services-basement-17.0.0\\res\\values-mr\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "201",
-                        "endOffsets": "448"
-                    },
-                    "to": {
-                        "startLines": "37",
-                        "startColumns": "4",
-                        "startOffsets": "3934",
-                        "endColumns": "201",
-                        "endOffsets": "4131"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\c1e93a28f13cffd60bc9295019a7cfb6\\jetified-firebase-messaging-20.1.0\\res\\values-mr\\values.xml",
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\c1643450e02446602660692c53012201\\jetified-firebase-messaging-20.1.0\\res\\values-mr\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -86,6 +69,23 @@
                         "startOffsets": "2795,2904,3104,3229,3343,3547,3670,3808,4136,4345,4455,4640,4766,4964,5147,5237,5333",
                         "endColumns": "108,199,124,113,203,122,137,125,208,109,184,125,197,182,89,95,109",
                         "endOffsets": "2899,3099,3224,3338,3542,3665,3803,3929,4340,4450,4635,4761,4959,5142,5232,5328,5438"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\38e8e54bb3b0940a5c171cce0cd7a4a2\\jetified-play-services-basement-17.0.0\\res\\values-mr\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "201",
+                        "endOffsets": "448"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "3934",
+                        "endColumns": "201",
+                        "endOffsets": "4131"
                     }
                 }
             ]
